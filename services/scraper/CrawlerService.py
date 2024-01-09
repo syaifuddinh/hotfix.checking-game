@@ -15,6 +15,8 @@ def OpendAndGetPage(pageUrl, testingSelector = None, timeout = 2):
 		options.add_argument('--disable-gpu')
 		options.add_argument("--no-sandbox") 
 		options.add_argument("--disable-extensions") 
+		options.add_argument("--disable-dev-shm-usage")
+		options.binary_location = "/usr/bin/google-chrome"
 
 	if timeout > 7:
 		raise Exception("Can't crawl through " + pageUrl)
