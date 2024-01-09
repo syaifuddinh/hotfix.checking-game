@@ -1,0 +1,15 @@
+PyJWT==2.8.0
+flask
+selenium
+flask_sqlalchemy
+flask-cors
+alembic
+psycopg2
+bcrypt
+aoiklivereload
+python-dotenv
+sanic_cors
+uvicorn
+datetime
+requests
+google-auth
