@@ -37,3 +37,15 @@ def Get():
 		"status": 200,
 		"data": data
 	})
+
+def GetCodashop():
+
+	# MidasbuyService.GetUsernameAvailability("6129021", "goddess-of-victory-nikke", "sea", "OPTIONS")
+	# CodashopService.CrawlByUI("3509794783874", "among-heroes-fantasy-samkok", textualServerId=None, serverIndex="6", fieldType="OPTIONS")
+	data = CodashopService.CrawlByUI("51234281", "mobile-legends", "2006")
+	# data = os.getcwd()
+
+	return jsonify({
+		"status": 200,
+		"data": data
+	})

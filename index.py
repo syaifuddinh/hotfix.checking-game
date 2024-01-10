@@ -29,6 +29,10 @@ def get_books():
 def test():
 	return TestingController.Get()
 
+@app.route("/test-2", methods=['GET'])
+def test2():
+	return TestingController.GetCodashop()
+
 
 
 Game.Init(app)
