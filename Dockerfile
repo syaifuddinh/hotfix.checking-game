@@ -6,7 +6,7 @@ RUN apt-get update -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-RUN wget -O /tmp/chromedriver.zip https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_mac64.zip \
+RUN wget -O /tmp/chromedriver.zip https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip \
     && unzip /tmp/chromedriver.zip -d /usr/local/bin \
     && rm /tmp/chromedriver.zip \
     && chmod +x /usr/local/bin/chromedriver
